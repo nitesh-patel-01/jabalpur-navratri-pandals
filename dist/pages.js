@@ -5,3 +5,14 @@ const toggle=(arr,id)=>arr.includes(id)?arr.filter(x=>x!==id):[...arr,id];docume
 })();
 
 document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>a.closest('details').open=false));
+
+(()=>{
+const button=document.getElementById('install-guide'),message=document.getElementById('install-status');let prompt=null;
+const installed=()=>window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+function done(){if(button){button.textContent='Web app installed';button.disabled=true}if(message)message.textContent='You are using the installed Darshan web app.'}
+if(installed())done();
+window.addEventListener('beforeinstallprompt',ev=>{ev.preventDefault();prompt=ev;if(button&&!installed()){button.textContent='Install web app';button.disabled=false}if(message)message.textContent='Your browser is ready. Tap Install web app to add it to your device.'});
+window.addEventListener('appinstalled',()=>{prompt=null;done()});
+button?.addEventListener('click',async()=>{if(installed()){done();return}if(!prompt){document.getElementById('install-help').open=true;message.textContent='Use your browser’s menu or Share button. Installation steps are shown below.';return}try{await prompt.prompt();const choice=await prompt.userChoice;prompt=null;message.textContent=choice.outcome==='accepted'?'Installation accepted. Follow your browser’s confirmation to finish.':'Installation cancelled. You can install later from the browser menu.'}catch{document.getElementById('install-help').open=true;message.textContent='Use the browser installation steps below.'}});
+document.getElementById('copy-upi')?.addEventListener('click',async()=>{const status=document.getElementById('tip-status');try{await navigator.clipboard.writeText('7974823298@naviaxis');status.textContent='UPI ID copied: 7974823298@naviaxis'}catch{const input=document.getElementById('tip-upi');input.focus();input.select();status.textContent='Select and copy the UPI ID above.'}});
+})();
