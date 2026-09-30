@@ -39,3 +39,7 @@ No live crowd monitoring or backend synchronization is connected. Nearby distanc
 ## Validation
 
 JavaScript syntax checks passed. Programmatic checks passed for full directory counts, search, filters, saved lists, details, creator contacts and split route links. All generated internal links and local assets resolve. Browser visual QA and HTTPS installation testing remain for the hosted preview/launch.
+
+
+## 2025 archive photos
+Verified matching archive photos added for Maa Hitkarini Dham and Maa Sunarhai Pariwar. Photo pages include Wikimedia Commons sources, credits to Kanha Shivhare / Gamerzer, CC BY-SA 4.0 links and WebP conversion notes. Original watermarks are preserved. Five listings now have matching photos; 112 still have labelled representative images.
