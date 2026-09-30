@@ -46,3 +46,6 @@ Verified matching archive photos added for Maa Hitkarini Dham and Maa Sunarhai P
 
 
 Homepage: 12 main pandals, 12 popular area shortcuts and all 53 areas in the expanded directory. Search, category filters and area pages continue to expose the full 117-listing catalogue. Mobile header includes Areas and a native disclosure menu. Festival artwork uses subtle CSS animation with reduced-motion support.
+
+
+Performance: system font stacks remove external Google Fonts CSS/font requests. Homepage hero is WebP (53,386 bytes instead of 167,211 bytes). Only route pages request the catalogue; other pages embed just their own listing data when needed. Route catalogue includes only required fields. Above-fold detail media loads eagerly; other media decode asynchronously. Offline installation starts after load when idle. WebP and PNG responses use browser caching. Google Search Console and Monetag verification meta tags are included across generated pages.
