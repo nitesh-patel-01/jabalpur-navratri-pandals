@@ -42,4 +42,7 @@ JavaScript syntax checks passed. Programmatic checks passed for full directory c
 
 
 ## 2025 archive photos
-Verified matching archive photos added for Maa Hitkarini Dham and Maa Sunarhai Pariwar. Photo pages include Wikimedia Commons sources, credits to Kanha Shivhare / Gamerzer, CC BY-SA 4.0 links and WebP conversion notes. Original watermarks are preserved. Five listings now have matching photos; 112 still have labelled representative images.
+Verified matching archive photos added for Maa Hitkarini Dham and Maa Sunarhai Pariwar. Photo pages include Wikimedia Commons sources, credits to Kanha Shivhare / Gamerzer, CC BY-SA 4.0 links and WebP conversion notes. Original watermarks are preserved. Five listings now have matching photos; 112 use labelled animated Jabalpur Navratri Darshan 2026 festival artwork.
+
+
+Homepage: 12 main pandals, 12 popular area shortcuts and all 53 areas in the expanded directory. Search, category filters and area pages continue to expose the full 117-listing catalogue. Mobile header includes Areas and a native disclosure menu. Festival artwork uses subtle CSS animation with reduced-motion support.
